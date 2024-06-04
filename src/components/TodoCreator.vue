@@ -52,10 +52,22 @@ todoState.errMsg = "Todo Value cannot be empty";
       outline: none;
     }
   }
-
- 
-  
 }
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 24px;
+    gap: 20px;
+  }
+
+  .todos-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
 .err-msg {
   margin-top: 6px;
   font-size: 12px;
