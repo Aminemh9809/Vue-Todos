@@ -1,56 +1,32 @@
-    <script setup>
-    import { RouterLink } from 'vue-router';
-    </script>
-    
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
+
 <template>
-    <header>
-        <nav class="container">
-            <div class="branding">
-                <img src="../assets/Vue_Logo_Black.png" alt="">
-                <h1>Vue Todos</h1>
-            </div>
-            <ul class="nav-route">
-                <router-link to="/">Home</router-link>
-                <router-link to="/about">About</router-link>
-            </ul>
-        </nav>
-    </header>
+  <header class="bg-light">
+    <nav class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <div class="d-flex align-items-center">
+            <img src="../assets/Vue_Logo_Black.png" alt="Vue Logo" class="img-fluid me-2" style="max-width: 50px;">
+            <h1 class="h4 mb-0">Vue Todos</h1>
+          </div>
+        </div>
+        <div class="col text-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item me-3">
+              <router-link to="/" class="text-dark text-decoration-none">Home</router-link>
+            </li>
+            <li class="list-inline-item">
+              <router-link to="/about" class="text-dark text-decoration-none">About</router-link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 </template>
 
-
-<style lang="scss" scoped>
-header {
-  background-color: #f1f1f1;
-  nav {
-    display: flex;
-    align-items: center;
-    padding: 25px 16px;
-
-    .branding {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      img {
-        max-width: 50px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-    }
-
-    .nav-routes {
-      display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      gap: 12px;
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-  }
-}
+<style scoped>
+/* No custom styles needed, using Bootstrap classes */
 </style>
